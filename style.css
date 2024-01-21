@@ -74,10 +74,10 @@ nav ul li a:hover::after{
     color: red;
 }
 .header-text h1 s{
-    background: linear-gradient(to right, orange, green);
+    color: linear-gradient(to right, #FF671F, #FFFFFF, #046A38);
 }
 .sub-title span{
-    background: linear-gradient(to right, #fff, red);
+    background: linear-gradient(to right, #fff, rgb(250, 250, 250));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: none;
