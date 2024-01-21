@@ -74,7 +74,7 @@ nav ul li a:hover::after{
     color: red;
 }
 .india{
-    background: linear-gradient(to right, #FF671F, #046A38);
+    background: linear-gradient(to right, #FF671F, #fff, #046A38);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: none;
