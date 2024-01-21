@@ -73,7 +73,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: red;
 }
-.header-text h1 s{
+.header-text h1 span-1{
     color: linear-gradient(to right, #FF671F, #FFFFFF, #046A38);
 }
 .sub-title span{
