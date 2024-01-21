@@ -73,6 +73,9 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: red;
 }
+.header-text h1 s{
+    background: linear-gradient(to right, orange, green);
+}
 .sub-title span{
     background: linear-gradient(to right, #fff, red);
     -webkit-text-fill-color: transparent;
