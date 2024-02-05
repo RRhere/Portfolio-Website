@@ -213,7 +213,7 @@
             var tabcontents=document.getElementsByClassName("tab-contents");
             function generateDate() {
                 var currentTime = new Date();
-                var curdate = currentTime.toISOString().split('T')[0];
+                var curdate = currentTime.toISOString();
                 document.getElementById("dateHidden").value = curdate;
             }
             function opentab(tabname){
