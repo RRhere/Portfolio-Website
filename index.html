@@ -215,7 +215,7 @@
             function generateDate() {
                 var currentTime = new Date();
                 var curdate = currentTime.toISOString().split('T')[0];
-                var curtime = currentTime.toISOString().split('T')[1];
+                var curTime = currentTime.toISOString().split('T')[1].split('.')[0];
                 document.getElementById("dateHidden").value = curdate;
                 document.getElementById("timeHidden").value = curtime;                
             }
