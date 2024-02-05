@@ -196,6 +196,7 @@
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <input type="date" name="Date" id="dateHidden" hidden>
+                <input type="time" name="Time" id="timeHidden" hidden>
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn2" onclick="generateDate()">Submit</button>
             </form>
@@ -213,8 +214,10 @@
             var tabcontents=document.getElementsByClassName("tab-contents");
             function generateDate() {
                 var currentTime = new Date();
-                var curdate = currentTime.toISOString();
+                var curdate = currentTime.toISOString().split('T')[0];
+                var curtime = currentTime.toISOString().split('T')[1];
                 document.getElementById("dateHidden").value = curdate;
+                document.getElementById("timeHidden").value = curtime;                
             }
             function opentab(tabname){
                 for(tablink of tablinks){
@@ -228,7 +231,7 @@
             }
         </script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbz8xmDQMRSK44pwk1QQDfNWebzBhmK9nd-qjaCQwllGXHR8BSsB4Z_8HUO1tmEx97YRRg/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw-Ef-fn1yF5PeFO3lLRFeEOqmR0lhLTumwVfvcD__E6yZUgXSuti39lCG-yRF8ZqZc3A/exec'
             const form = document.forms['submit-to-google-sheet']
             const msg=document.getElementById("msg")
 
