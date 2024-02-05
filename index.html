@@ -196,7 +196,7 @@
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <input type="date" name="Date" id="dateHidden" hidden>
-                <input type="time" name="Time" id="timeHidden" hidden>
+                <input type="hidden" name="Time" id="timeHidden" hidden>
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn2" onclick="generateDate()">Submit</button>
             </form>
@@ -215,7 +215,7 @@
             function generateDate() {
                 var currentTime = new Date();
                 var curdate = currentTime.toISOString().split('T')[0];
-                var curtime = currentTime.toISOString().split('T')[1].split('.')[0];
+                var curtime = currentTime.toTimeString().split(' ')[0];
                 document.getElementById("dateHidden").value = curdate;
                 document.getElementById("timeHidden").value = curtime;                
             }
