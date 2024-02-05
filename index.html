@@ -192,12 +192,12 @@
                 <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-            <form name="submit-to-google-sheet" action="generateDate()">
+            <form name="submit-to-google-sheet">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <input type="date" name="Date" id="dateHidden" hidden>
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn2">Submit</button>
+                <button type="submit" class="btn btn2" onclick="generateDate()">Submit</button>
             </form>
             <span id="msg"></span>
             </div>
@@ -214,8 +214,6 @@
             function generateDate(){
                 var currentTime = new Date();                
                 var curdate = currentTime.getDate();
-                document.getElementbyId("dateHidden").value = curdate;
-                return true;
             }
             function opentab(tabname){
                 for(tablink of tablinks){
