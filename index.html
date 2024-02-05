@@ -192,9 +192,10 @@
                 <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-            <form name="submit-to-google-sheet">
+            <form name="submit-to-google-sheet" action="generateDate()">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Mmail" placeholder="Your Email" required>
+                <input type="hidden" name="Language" id="dateHidden">
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
             </form>
@@ -210,6 +211,12 @@
         <script>
             var tablinks=document.getElementsByClassName("tab-links");
             var tabcontents=document.getElementsByClassName("tab-contents");
+            function generateDate(){
+                var currentTime = new Date();                
+                var curdate = currentTime.getDate();
+                document.getElementbyId("dateHidden").value = curdate;
+                return true;
+            }
             function opentab(tabname){
                 for(tablink of tablinks){
                     tablink.classList.remove("active-link");
