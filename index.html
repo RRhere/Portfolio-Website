@@ -194,8 +194,8 @@
             <div class="contact-right">
             <form name="submit-to-google-sheet" action="generateDate()">
                 <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Mmail" placeholder="Your Email" required>
-                <input type="hidden" name="Language" id="dateHidden">
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <input type="hidden" name="Date" id="dateHidden">
                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
             </form>
@@ -229,7 +229,7 @@
             }
         </script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzoshm1J35URpw3VTgOmT52LF7myL6feVHCez5ZnEIzMM_2-x9Lt85JZYz3fXZbWqL6xw/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz8xmDQMRSK44pwk1QQDfNWebzBhmK9nd-qjaCQwllGXHR8BSsB4Z_8HUO1tmEx97YRRg/exec'
             const form = document.forms['submit-to-google-sheet']
             const msg=document.getElementById("msg")
 
