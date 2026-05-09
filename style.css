@@ -150,6 +150,7 @@ a {
 
 .section {
     padding: 5rem 0;
+    scroll-margin-top: 90px;
 }
 
 .section-header {
