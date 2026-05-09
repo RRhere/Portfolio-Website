@@ -38,9 +38,9 @@
 
         <div class="container header-container">
 
-            <div class="logo">
-                Ragav Radhesh
-            </div>
+                <div class="logo">
+                    Ragav Radhesh
+                </div>
 
             <nav class="site-nav">
 
@@ -483,15 +483,16 @@
             button.innerHTML = "Sending...";
 
             const templateParams = {
+                name: "Contact Form Submission",
 
-                from_name:
-                    document.getElementById('name').value,
+                title: 
+                    document.getElementById('message').value,
 
-                from_email:
+                email:
                     document.getElementById('email').value,
 
-                message:
-                    document.getElementById('message').value
+                from_name:
+                    document.getElementById('name').value
 
             };
 
