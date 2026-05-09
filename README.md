@@ -65,6 +65,8 @@ index.html
 
 OR use Live Server extension in VS Code.
 
+---
+
 ## 📧 EmailJS Setup
 
 This portfolio uses EmailJS for the contact form.
@@ -114,6 +116,8 @@ template_portfolio
 
 with your actual EmailJS values.
 
+---
+
 ## 🎨 UI Features
 Hero Section
 Animated typing effect
@@ -129,7 +133,10 @@ Hover animations
 Contact Section
 EmailJS integration
 Real-time message status
-📱 Responsive Design
+
+--- 
+
+## 📱 Responsive Design
 
 Optimized for:
 
@@ -137,6 +144,8 @@ Desktop
 Laptop
 Tablet
 Mobile Devices
+
+--- 
 
 ## ✨ Customization
 Change Accent Color
@@ -163,6 +172,8 @@ Duplicate this block:
 <div class="work glass hidden">
 </div>
 
+---
+
 ## 🌐 Deployment
 
 You can deploy using:
@@ -170,6 +181,8 @@ You can deploy using:
 GitHub Pages
 Netlify
 Vercel
+
+---
 
 ## 📸 Preview
 
@@ -179,6 +192,8 @@ SaaS Landing Pages
 Modern Portfolio Websites
 Glassmorphism UI Trends
 
+---
+
 ## 👨‍💻 Author
 Ragav Radhesh
 
@@ -186,18 +201,10 @@ Connect With Me
 GitHub: https://github.com/RRhere
 LinkedIn: https://www.linkedin.com/in/ragavradhesh/
 
+---
+
 ## 📄 License
 
 This project is open-source and available under the MIT License.
 
-## ⭐ Support
-
-If you like this project:
-
-Star the repository
-Fork the project
-Share it with others
-
 ---
-
-**Last Updated**: May 2026
