@@ -1,196 +1,573 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="/icon.ico">
-        <script src="https://kit.fontawesome.com/e5073da84c.js" crossorigin="anonymous"></script>
-        <title>Ragav Radhesh | Portfolio</title>
-    </head>
-    <body>
-        <header class="site-header" id="header">
-            <div class="container header-container">
-                <nav class="site-nav" aria-label="Primary navigation">
-                    <ul>
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ragav Radhesh | Portfolio</title>
+
+    <link rel="icon" href="/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e5073da84c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cursor-glow"></div>
+
+    <!-- HEADER -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <div class="logo">
+                RR
             </div>
-        </header>
-        <section class="hero">
-            <div class="container hero-content">
-                <p class="eyebrow">Full Stack Software Engineer</p>
-                <h1>Hi, I'm <span class="name">Ragav</span>, building modern digital experiences.</h1>
-                <p class="hero-copy">I create scalable, high-performance web applications and AI-enabled workflows with Next.js, React, Sitecore Headless CMS, Azure, and automated DevOps pipelines.</p>
-                <div class="hero-actions">
-                    <a class="btn" href="#portfolio">See my work</a>
-                    <a class="btn btn-secondary" href="/cv/Ragav_Radhesh.pdf" download>Download CV</a>
-                </div>
+
+            <nav class="site-nav">
+
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="header">
+
+        <div class="hero-bg"></div>
+
+        <div class="container hero-content">
+
+            <p class="eyebrow">
+                FULL STACK SOFTWARE ENGINEER
+            </p>
+
+            <h1>
+                Hi, I'm
+                <span class="typing"></span>
+            </h1>
+
+            <p class="hero-copy">
+                Building scalable enterprise applications, AI-powered workflows,
+                and high-performance web experiences with React, Next.js,
+                Sitecore Headless CMS, Azure, and modern DevOps pipelines.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#portfolio" class="btn">
+                    View Projects
+                </a>
+
+                <a href="/cv/Ragav_Radhesh.pdf" download class="btn btn-secondary">
+                    Download Resume
+                </a>
+
             </div>
-        </section>
-        <main>
-            <section id="about" class="section about-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>About Me</h2>
-                        <p>I build enterprise-ready web applications with an emphasis on performance, maintainability, and excellent user experience.</p>
-                    </div>
-                    <div class="about-grid">
-                        <div class="about-copy">
-                            <p>Welcome to my portfolio!
-                            <br><br>
-                            I am a Full Stack Software Engineer focused on delivering modern digital experiences through scalable web applications. Currently, I work at Comcast developing enterprise-grade solutions using Next.js, React, and Sitecore Headless CMS.
-                            <br><br>
-                            My work covers frontend engineering, cloud deployments, CI/CD automation, performance optimization, and QA automation. I enjoy solving production issues, improving application reliability, and creating systems that remain maintainable as they grow.
-                            <br><br>
-                            I have hands-on experience with Azure cloud services, Docker, GitHub Actions, Azure DevOps, and SQL-backed systems. I also build AI-powered workflows with GPT/LLM services and am passionate about edge optimization, AI integration, and modern web architecture.
-                            <br><br>
-                            Outside of work, I build personal projects involving SaaS platforms, real-time systems, automation, and AI-enhanced applications. Explore my projects below and feel free to get in touch for collaboration.</p>
-                        </div>
-                        <div class="about-panel">
-                            <div class="tab-titles" role="tablist">
-                                <button class="tab-links active-link" type="button" data-tab="skills">Skills</button>
-                                <button class="tab-links" type="button" data-tab="education">Education</button>
-                                <button class="tab-links" type="button" data-tab="hobbies">Hobbies</button>
-                                <button class="tab-links" type="button" data-tab="work-experience">Work</button>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills" role="tabpanel">
-                                <ul>
-                                    <li><span>Frontend Development</span>React.js / Next.js / HTML5 / CSS / Responsive Web Design / Sitecore JSS</li>
-                                    <li><span>Backend & APIs</span>Node.js / Python / Flask / GraphQL / REST APIs / PostgreSQL / SQL</li>
-                                    <li><span>Cloud & DevOps</span>Microsoft Azure / Azure App Services / Azure SQL Database / Docker / Azure DevOps / GitHub Actions</li>
-                                    <li><span>Testing & Automation</span>Selenium / UI Test Automation / Regression Testing / Build Validation</li>
-                                    <li><span>AI & Integrations</span>GPT and LLM Integrations / AI workflow automation / API-based AI services</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education" role="tabpanel">
-                                <ul>
-                                    <li><span>2020–2024</span>B.E. Electronics and Communications, Thaiagarajar College of Engineering, Madurai</li>
-                                    <li><span>2019–2020</span>Class 12, Sri Chaitanya Techno School, Bangalore</li>
-                                    <li><span>2017–2018</span>Class 10, Maharishi Vidya Mandir, Hosur</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="hobbies" role="tabpanel">
-                                <ul>
-                                    <li><span>Sports</span>Cricket / Football / Volleyball</li>
-                                    <li><span>Music</span>Rock / Pop / Jazz</li>
-                                    <li><span>Movies</span>Action / Thriller / Adventure</li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="work-experience" role="tabpanel">
-                                <ul>
-                                    <li><span>07/2024-Present</span>Development Engineer @ Comcast
-                                        <p>Built and maintained Sitecore JSS and Next.js applications with reusable UI components, improved frontend performance, and led automation testing initiatives.</p>
-                                    </li>
-                                    <li><span>01/2024-06/2024</span>Intern @ Comcast
-                                        <p>Developed responsive webpages, optimized load performance, and collaborated across backend and DevOps teams for deployment validation.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="portfolio" class="section portfolio-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>My Works</h2>
-                        <p>Selected project highlights and public repositories.</p>
-                    </div>
-                    <div class="work-list">
-                        <article class="work">
-                            <div class="layer">
-                                <h3>Notes App</h3>
-                                <p>An innovative note-taking application built with Flask, Python, HTML, and CSS.</p>
-                                <a href="https://notes-app-s9nr.onrender.com/login?next=%2F" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </article>
-                        <article class="work">
-                            <div class="layer">
-                                <h3>GitHub</h3>
-                                <p>Browse my public repositories and recent software projects on GitHub.</p>
-                                <a href="https://github.com/RRhere/RRhere" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-            <section id="contact" class="section contact-section">
-                <div class="container">
-                    <div class="section-header">
-                        <h2>Contact</h2>
-                        <p>Reach out for collaboration, opportunities, or project inquiries.</p>
-                    </div>
-                    <div class="contact-grid">
-                        <div class="contact-left">
-                            <h3>Get in touch</h3>
-                            <p><i class="fa-solid fa-envelope"></i> ragavradhesh@gmail.com</p>
-                            <p><i class="fa-solid fa-square-phone"></i> +91 7708249099</p>
-                            <div class="social-icons">
-                                <a href="https://www.linkedin.com/in/ragavradhesh/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                            </div>
-                            <a href="/cv/Ragav_Radhesh.pdf" download class="btn btn-secondary">Download CV</a>
-                        </div>
-                        <div class="contact-right">
-                            <form id="contactForm">
-                                <label for="name">Your Name</label>
-                                <input id="name" name="name" type="text" placeholder="Your Name" required>
-                                <label for="email">Your Email</label>
-                                <input id="email" name="email" type="email" placeholder="Your Email" required>
-                                <label for="message">Your Message</label>
-                                <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
-                                <button type="submit" class="btn btn-submit">Send message</button>
-                            </form>
-                            <p class="msg" id="msg"></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="site-footer">
-            <div class="container">
-                <p>&copy; 2026 Ragav Radhesh.</p>
+
+            <div class="hero-tech">
+
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Sitecore</span>
+                <span>AI/LLM</span>
+
             </div>
-        </footer>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const tabLinks = document.querySelectorAll('.tab-links');
-                const tabContents = document.querySelectorAll('.tab-contents');
-                tabLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        tabLinks.forEach(item => item.classList.remove('active-link'));
-                        tabContents.forEach(panel => panel.classList.remove('active-tab'));
-                        link.classList.add('active-link');
-                        document.getElementById(link.dataset.tab).classList.add('active-tab');
-                    });
-                });
 
-                const form = document.getElementById('contactForm');
-                const msg = document.getElementById('msg');
+        </div>
 
-                form.addEventListener('submit', event => {
-                    event.preventDefault();
-                    const name = form.name.value.trim();
-                    const email = form.email.value.trim();
-                    const message = form.message.value.trim();
+    </section>
 
-                    if (!name || !email || !message) {
-                        msg.textContent = 'Please complete all fields before sending.';
-                        return;
-                    }
+    <!-- ABOUT -->
 
-                    const subject = encodeURIComponent(`Portfolio message from ${name}`);
-                    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-                    window.location.href = `mailto:ragavradhesh@gmail.com?subject=${subject}&body=${body}`;
-                    msg.textContent = 'Opening your email client...';
-                    form.reset();
-                });
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I'm Ragav Radhesh, a Full Stack Software Engineer passionate
+                    about building scalable applications, AI-powered solutions,
+                    cloud-native systems, and enterprise digital experiences.
+                </p>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-copy glass hidden">
+
+                    <p>
+                        I specialize in React.js, Next.js, Sitecore Headless CMS,
+                        Azure Cloud, Docker, CI/CD automation, and modern backend systems.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        My work focuses on performance optimization, scalable architecture,
+                        developer experience, and AI integration using GPT/LLM services.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        I also enjoy building SaaS products, automation systems,
+                        real-time applications, and developer tools.
+                    </p>
+
+                </div>
+
+                <div class="about-panel glass hidden">
+
+                    <div class="tab-titles">
+
+                        <button class="tab-links active-link" data-tab="skills">
+                            Skills
+                        </button>
+
+                        <button class="tab-links" data-tab="education">
+                            Education
+                        </button>
+
+                        <button class="tab-links" data-tab="work">
+                            Work
+                        </button>
+
+                    </div>
+
+                    <!-- SKILLS -->
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+
+                            <li>
+                                <span>Frontend</span>
+
+                                React.js / Next.js / HTML5 / CSS / Sitecore JSS
+                            </li>
+
+                            <li>
+                                <span>Backend</span>
+
+                                Node.js / Python / Flask / GraphQL / REST APIs / SQL
+                            </li>
+
+                            <li>
+                                <span>Cloud & DevOps</span>
+
+                                Azure / Docker / Azure DevOps / GitHub Actions
+                            </li>
+
+                            <li>
+                                <span>Automation</span>
+
+                                Selenium / UI Testing / Regression Testing
+                            </li>
+
+                            <li>
+                                <span>AI Integration</span>
+
+                                GPT / LLM APIs / AI Workflows
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- EDUCATION -->
+
+                    <div class="tab-contents" id="education">
+
+                        <ul>
+
+                            <li>
+                                <span>2020 - 2024</span>
+
+                                B.E Electronics & Communication Engineering
+                                <br>
+                                Thaiagarajar College of Engineering
+                            </li>
+
+                            <li>
+                                <span>2019 - 2020</span>
+
+                                Class XII - Sri Chaitanya Techno School
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- WORK -->
+
+                    <div class="tab-contents" id="work">
+
+                        <ul>
+
+                            <li>
+                                <span>2024 - Present</span>
+
+                                Development Engineer @ Comcast
+                            </li>
+
+                            <li>
+                                <span>2024</span>
+
+                                Intern @ Comcast
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section class="section" id="portfolio">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Projects</h2>
+
+            </div>
+
+            <div class="work-list">
+
+                <div class="work glass hidden">
+
+                    <div class="layer">
+
+                        <h3>Notes App</h3>
+
+                        <p>
+                            Flask-based note-taking application with authentication,
+                            CRUD operations, and cloud deployment.
+                        </p>
+
+                        <a href="https://notes-app-s9nr.onrender.com/login?next=%2F"
+                           target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="work glass hidden">
+
+                    <div class="layer">
+
+                        <h3>GitHub Portfolio</h3>
+
+                        <p>
+                            Browse my repositories, experiments,
+                            automation tools, and full stack projects.
+                        </p>
+
+                        <a href="https://github.com/RRhere/RRhere"
+                           target="_blank">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h2>Contact</h2>
+
+                <p>
+                    Open to collaboration, freelance opportunities,
+                    and exciting engineering roles.
+                </p>
+
+            </div>
+
+            <div class="contact-grid">
+
+                <div class="contact-left glass hidden">
+
+                    <h3>Let's Connect</h3>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        ragavradhesh@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 7708249099
+                    </p>
+
+                    <div class="social-icons">
+
+                        <a href="https://www.linkedin.com/in/ragavradhesh/"
+                           target="_blank">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+
+                        <a href="https://github.com/RRhere"
+                           target="_blank">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-right glass hidden">
+
+                    <form id="contactForm">
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Your Name"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Your Email"
+                            required
+                        >
+
+                        <textarea
+                            id="message"
+                            rows="6"
+                            placeholder="Your Message"
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="btn">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                    <p id="msg"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Ragav Radhesh. Built with passion & caffeine.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script>
+
+        // TABS
+
+        const tabLinks = document.querySelectorAll('.tab-links');
+        const tabContents = document.querySelectorAll('.tab-contents');
+
+        tabLinks.forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                tabLinks.forEach(btn =>
+                    btn.classList.remove('active-link')
+                );
+
+                tabContents.forEach(tab =>
+                    tab.classList.remove('active-tab')
+                );
+
+                link.classList.add('active-link');
+
+                document
+                    .getElementById(link.dataset.tab)
+                    .classList.add('active-tab');
+
             });
-        </script>
-    </body>
+
+        });
+
+        // CONTACT FORM
+
+        const form = document.getElementById('contactForm');
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const subject =
+                encodeURIComponent(`Portfolio message from ${name}`);
+
+            const body =
+                encodeURIComponent(
+                    `Name: ${name}\nEmail: ${email}\n\n${message}`
+                );
+
+            window.location.href =
+                `mailto:ragavradhesh@gmail.com?subject=${subject}&body=${body}`;
+
+            msg.innerHTML = "Opening email client...";
+            form.reset();
+
+        });
+
+        // TYPING EFFECT
+
+        const words = [
+            "Ragav",
+            "a Full Stack Engineer",
+            "an AI Integrator",
+            "a Problem Solver"
+        ];
+
+        let i = 0;
+        let j = 0;
+        let currentWord = "";
+        let isDeleting = false;
+
+        function type() {
+
+            currentWord = words[i];
+
+            if (isDeleting) {
+                j--;
+            } else {
+                j++;
+            }
+
+            document.querySelector(".typing").textContent =
+                currentWord.substring(0, j);
+
+            if (!isDeleting && j === currentWord.length) {
+
+                isDeleting = true;
+
+                setTimeout(type, 1200);
+
+                return;
+
+            }
+
+            if (isDeleting && j === 0) {
+
+                isDeleting = false;
+
+                i = (i + 1) % words.length;
+
+            }
+
+            setTimeout(type, isDeleting ? 60 : 120);
+
+        }
+
+        type();
+
+        // SCROLL ANIMATION
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+
+            });
+
+        });
+
+        document.querySelectorAll('.hidden').forEach(el => {
+
+            observer.observe(el);
+
+        });
+
+        // CURSOR GLOW
+
+        const glow = document.querySelector('.cursor-glow');
+
+        document.addEventListener('mousemove', (e) => {
+
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+
+        });
+
+    </script>
+
+</body>
 </html>
