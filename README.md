@@ -1,4 +1,4 @@
-# 🔥 Ragav Radhesh Portfolio
+# 🔥 My Portfolio
 
 A modern, responsive, red-and-black themed developer portfolio built using HTML, CSS, and JavaScript.
 
@@ -6,7 +6,7 @@ Designed to showcase projects, skills, experience, and contact information with 
 
 ---
 
-# 🚀 Live Features
+## 🚀 Live Features
 
 - Modern Red & Black UI
 - Fully Responsive Design
@@ -22,21 +22,21 @@ Designed to showcase projects, skills, experience, and contact information with 
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-## Frontend
+### Frontend
 - HTML5
 - CSS3
 - JavaScript
 
-## Libraries & Services
+### Libraries & Services
 - Font Awesome
 - Google Fonts
 - EmailJS
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```bash
 portfolio/
@@ -47,12 +47,13 @@ portfolio/
 ├── README.md
 │
 ├── cv/
-│   └── Ragav_Radhesh.pdf
+│   └── cv.pdf
 │
 └── assets/
 ```
+---
 
-# ⚡ Getting Started
+## ⚡ Getting Started
 1. Clone Repository
 git clone https://github.com/RRhere/RRhere.git
 2. Open Project
@@ -64,7 +65,7 @@ index.html
 
 OR use Live Server extension in VS Code.
 
-📧 EmailJS Setup
+## 📧 EmailJS Setup
 
 This portfolio uses EmailJS for the contact form.
 
@@ -113,7 +114,7 @@ template_portfolio
 
 with your actual EmailJS values.
 
-# 🎨 UI Features
+## 🎨 UI Features
 Hero Section
 Animated typing effect
 Gradient glow background
@@ -137,7 +138,7 @@ Laptop
 Tablet
 Mobile Devices
 
-# ✨ Customization
+## ✨ Customization
 Change Accent Color
 
 Inside style.css:
@@ -162,14 +163,15 @@ Duplicate this block:
 <div class="work glass hidden">
 </div>
 
-# 🌐 Deployment
+## 🌐 Deployment
 
 You can deploy using:
 
 GitHub Pages
 Netlify
 Vercel
-📸 Preview
+
+## 📸 Preview
 
 Features a modern developer-focused design inspired by:
 
@@ -177,23 +179,25 @@ SaaS Landing Pages
 Modern Portfolio Websites
 Glassmorphism UI Trends
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 Ragav Radhesh
-
-Full Stack Software Developer
 
 Connect With Me
 GitHub: https://github.com/RRhere
 LinkedIn: https://www.linkedin.com/in/ragavradhesh/
 
-# 📄 License
+## 📄 License
 
 This project is open-source and available under the MIT License.
 
-# ⭐ Support
+## ⭐ Support
 
 If you like this project:
 
 Star the repository
 Fork the project
 Share it with others
+
+---
+
+**Last Updated**: May 2026
