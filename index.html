@@ -1,253 +1,197 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="/icon.ico">
         <script src="https://kit.fontawesome.com/e5073da84c.js" crossorigin="anonymous"></script>
-        <title>MY WEBSITE</title>
+        <title>Ragav Radhesh | Portfolio</title>
     </head>
     <body>
-        <div id="header">
-            <div id="container">
-                <nav>
-                    <img src="images/logo.png" alt="image" class="logo">
+        <header class="site-header" id="header">
+            <div class="container header-container">
+                <a class="brand" href="#header">Ragav</a>
+                <nav class="site-nav" aria-label="Primary navigation">
                     <ul>
-                        <li><a href="#header">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#projects">PROJECTS</a></li>
-                        <li><a href="#portfolio">WORKS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>                
-                    </ul>                    
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
-                <div class="header-text">
-                    <div class="row">
-                        <div class="header-col-1">
-                            <h1>Hi, I'm <span class="name">Ragav</span><br>from <span class="india">India</span></h1>
-                        </div>
-                        <div class="header-col-2">
-                            <img src="images/black.jpg" alt="main">
-                        </div>
-                    </div>                   
+            </div>
+            <div class="hero">
+                <div class="container hero-content">
+                    <p class="eyebrow">Full Stack Software Engineer</p>
+                    <h1>Hi, I'm <span class="name">Ragav</span>, building modern digital experiences.</h1>
+                    <p class="hero-copy">I create scalable, high-performance web applications and AI-enabled workflows with Next.js, React, Sitecore Headless CMS, Azure, and automated DevOps pipelines.</p>
+                    <div class="hero-actions">
+                        <a class="btn" href="#portfolio">See my work</a>
+                        <a class="btn btn-secondary" href="/cv/Ragav_Radhesh.pdf" download>Download CV</a>
+                    </div>
                 </div>
             </div>
-        </div>
-<!---------------------------------------------about----------------------------------------------->
-        <div id="about">
+        </header>
+        <main>
+            <section id="about" class="section about-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>About Me</h2>
+                        <p>I build enterprise-ready web applications with an emphasis on performance, maintainability, and excellent user experience.</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-copy">
+                            <p>Welcome to my portfolio!
+                            <br><br>
+                            I am a Full Stack Software Engineer focused on delivering modern digital experiences through scalable web applications. Currently, I work at Comcast developing enterprise-grade solutions using Next.js, React, and Sitecore Headless CMS.
+                            <br><br>
+                            My work covers frontend engineering, cloud deployments, CI/CD automation, performance optimization, and QA automation. I enjoy solving production issues, improving application reliability, and creating systems that remain maintainable as they grow.
+                            <br><br>
+                            I have hands-on experience with Azure cloud services, Docker, GitHub Actions, Azure DevOps, and SQL-backed systems. I also build AI-powered workflows with GPT/LLM services and am passionate about edge optimization, AI integration, and modern web architecture.
+                            <br><br>
+                            Outside of work, I build personal projects involving SaaS platforms, real-time systems, automation, and AI-enhanced applications. Explore my projects below and feel free to get in touch for collaboration.</p>
+                        </div>
+                        <div class="about-panel">
+                            <div class="tab-titles" role="tablist">
+                                <button class="tab-links active-link" type="button" data-tab="skills">Skills</button>
+                                <button class="tab-links" type="button" data-tab="education">Education</button>
+                                <button class="tab-links" type="button" data-tab="hobbies">Hobbies</button>
+                                <button class="tab-links" type="button" data-tab="work-experience">Work</button>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills" role="tabpanel">
+                                <ul>
+                                    <li><span>Frontend Development</span>React.js / Next.js / HTML5 / CSS / Responsive Web Design / Sitecore JSS</li>
+                                    <li><span>Backend & APIs</span>Node.js / Python / Flask / GraphQL / REST APIs / PostgreSQL / SQL</li>
+                                    <li><span>Cloud & DevOps</span>Microsoft Azure / Azure App Services / Azure SQL Database / Docker / Azure DevOps / GitHub Actions</li>
+                                    <li><span>Testing & Automation</span>Selenium / UI Test Automation / Regression Testing / Build Validation</li>
+                                    <li><span>AI & Integrations</span>GPT and LLM Integrations / AI workflow automation / API-based AI services</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education" role="tabpanel">
+                                <ul>
+                                    <li><span>2020–2024</span>B.E. Electronics and Communications, Thaiagarajar College of Engineering, Madurai</li>
+                                    <li><span>2019–2020</span>Class 12, Sri Chaitanya Techno School, Bangalore</li>
+                                    <li><span>2017–2018</span>Class 10, Maharishi Vidya Mandir, Hosur</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="hobbies" role="tabpanel">
+                                <ul>
+                                    <li><span>Sports</span>Cricket / Football / Volleyball</li>
+                                    <li><span>Music</span>Rock / Pop / Jazz</li>
+                                    <li><span>Movies</span>Action / Thriller / Adventure</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="work-experience" role="tabpanel">
+                                <ul>
+                                    <li><span>07/2024–Present</span>Development Engineer @ Comcast
+                                        <p>Built and maintained Sitecore JSS and Next.js applications with reusable UI components, improved frontend performance, and led automation testing initiatives.</p>
+                                    </li>
+                                    <li><span>01/2024–06/2024</span>Intern @ Comcast
+                                        <p>Developed responsive webpages, optimized load performance, and collaborated across backend and DevOps teams for deployment validation.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="section portfolio-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>My Works</h2>
+                        <p>Selected project highlights and public repositories.</p>
+                    </div>
+                    <div class="work-list">
+                        <article class="work">
+                            <div class="layer">
+                                <h3>Notes App</h3>
+                                <p>An innovative note-taking application built with Flask, Python, HTML, and CSS.</p>
+                                <a href="https://notes-app-s9nr.onrender.com/login?next=%2F" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </article>
+                        <article class="work">
+                            <div class="layer">
+                                <h3>GitHub</h3>
+                                <p>Browse my public repositories and recent software projects on GitHub.</p>
+                                <a href="https://github.com/RRhere/RRhere" target="_blank" rel="noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Contact</h2>
+                        <p>Reach out for collaboration, opportunities, or project inquiries.</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-left">
+                            <h3>Get in touch</h3>
+                            <p><i class="fa-solid fa-envelope"></i> ragavradhesh@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> +91 7708249099</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/ragavradhesh/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <a href="/cv/Ragav_Radhesh.pdf" download class="btn btn-secondary">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form id="contactForm">
+                                <label for="name">Your Name</label>
+                                <input id="name" name="name" type="text" placeholder="Your Name" required>
+                                <label for="email">Your Email</label>
+                                <input id="email" name="email" type="email" placeholder="Your Email" required>
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="btn btn-submit">Send message</button>
+                            </form>
+                            <p class="msg" id="msg"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
             <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/normal.png" alt="user">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title"><span>ABOUT ME</span></h1>
-                        <p>
-                            Welcome to my portfolio! I am a final year student pursuing Electronics and 
-                            Communication Engineering at Thiagarajar College of Engineering, Madurai. 
-                            My passion lies in developing websites and games that captivate and 
-                            engage users.
-                            <br><br>
-                            Throughout my academic journey, I have honed my skills in ECE, gaining a 
-                            strong foundation in electronics. However, my true calling lies in the 
-                            world of web development and game design. I am enthusiastic about creating an
-                            immersive online experience that not only showcase my technical proficiency 
-                            but also reflect my creative vision.
-                            <br><br>
-                            As a web developer, I have mastered various languages and frameworks, 
-                            ensuring that the websites I craft are not only visually appealing but also 
-                            highly functional and user-friendly. From responsive designs to seamless 
-                            navigation, I strive to create a seamless digital experience for every visitor.
-                            <br><br>
-                            In the realm of game development, I have just started to develop games.
-                            I want to bring my passion for storytelling and interactive design to life. 
-                            I enjoy exploring new technologies and methodologies to create games that 
-                            entertain and challenge players. 
-                            <br><br>
-                            This portfolio serves as a testament to my dedication to both my academic 
-                            pursuits and my creative endeavors. Feel free to explore my projects, 
-                            and if you have any inquiries or collaboration opportunities, I would be 
-                            thrilled to connect. Thank you for visiting, and I look forward to sharing my 
-                            journey and creations with you!</p>
-
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('education')">Education</p>
-                                <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
-                                <p class="tab-links" onclick="opentab('work-experience')">Work</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>Programming</span><br>Python/Java/C</li>
-                                    <li><span>Web Development</span><br>Flask//HTML/CSS/BootStrap</li>
-                                    <li><span>Databases</span><br>MySQL/SQLAlchemy</li>                                    
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>2020-2024</span><br>ECE from TCE Madurai</li>
-                                    <li><span>2019-2020</span><br>Class 12 at Sri Chaitanya Bangalore</li>
-                                    <li><span>2017-2018</span><br>Class 10 at MVM Hosur</li>                                    
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="hobbies">
-                                <ul>
-                                    <li><span>Sports</span><br>Cricket/Football/Volleyball</li>
-                                    <li><span>Music</span><br>Rock/Pop/Jazz</li>
-                                    <li><span>Movies</span><br>Action/Thriller/Adventure</li>                                    
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="work-experience">
-                                <ul>
-                                    <li><span>2024-Present</span><br>Intern @COMCAST</li>                                    
-                                </ul>
-                            </div>
-                            
-
-                    </div>
-                </div>
+                <p>&copy; 2026 Ragav Radhesh.</p>
             </div>
-        </div>
-<!------------------------------------projects-------------------------------------------------------->
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title"><span>MY PROJECTS</span></h1>
-        <div class="projects-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Welcome to my web design portfolio! Here, you'll find a showcase of my projects, 
-                    reflecting my dedication to creating visually appealing and user-friendly websites 
-                    that seamlessly blend form and function. Explore the intersection of technology and 
-                    creativity in my digital creations!.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-gamepad"></i>
-                <h2>Game Design</h2>
-                <p>Dive into the world of friendly competition with my two-player Rock, Paper, Scissors 
-                    game! As the creator, I've designed an engaging digital experience where players can 
-                    go head-to-head, strategizing and making quick decisions. This game is a testament to 
-                    my programming and game development skills, offering a fun and interactive way to 
-                    enjoy the classic challenge of Rock, Paper, Scissors.
-                </p>
-            </div>
-            <div>
-                <i class="fa-solid fa-mobile"></i>
-                <h2>App Design</h2>
-                <p>Introducing my personalized Notes Web App, a testament to my design and development 
-                    skills. Tailored for efficiency and simplicity, this app offers an organized platform 
-                    for users to seamlessly jot down and manage their thoughts. From sleek aesthetics to 
-                    intuitive functionality, experience the ease of digital note-taking with my crafted 
-                    web application.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!------------------------------------------------portfolio---------------------------------------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title"><span>MY WORKS</span></h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.jpg" alt="work1">
-                <div class="layer">
-                    <h3>Notes App</h3>
-                    <p>Innovative notes app developed using flask, python, html and css.</p>
-                    <a href="https://notes-app-s9nr.onrender.com/login?next=%2F" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <!-- <div class="work">
-                <img src="images/work-2.jpg" alt="work2">
-                <div class="layer">
-                    <h3>Rock-Paper-Scisoors</h3>
-                    <p>A two player rock, paper, scissor game developed with the help of python and
-                        socket programming.</p>
-                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div> -->
-            <div class="work">
-                <img src="images/work-3.jpg" alt="work3">
-                <div class="layer">
-                    <h3>Github</h3>
-                    <p>Take a look at the projects I have designed at my github profile!.</p>
-                    <a href="https://github.com/RRhere/RRhere" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!---------------------------------------contact------------------------------------------------------->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title"><span>CONTACT</span></h1>
-                <p><i class="fa-solid fa-envelope"></i>ragavradhesh@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>+91 7708249099</p>
-                <div class="social-icons">
-                    <!-- <a href="https://twitter.com/ragavr_07"><i class="fa-brands fa-x-twitter"></i></a> -->
-                    <!-- <a href="https://www.instagram.com/ragav_.16/"><i class="fa-brands fa-instagram"></i></a> -->
-                    <a href="https://www.linkedin.com/in/ragavradhesh/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="/images/my-cv.pdf" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-            <form name="submit-to-google-sheet">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <input type="date" name="Date" id="dateHidden" hidden>
-                <input type="hidden" name="Time" id="timeHidden" hidden>
-                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn btn2" onclick="generateDate()">Submit</button>
-            </form>
-            <span id="msg"></span>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>&copy; 2024 Ragav Radhesh.</p>
-    </div>
-</div>
-
+        </footer>
         <script>
-            var tablinks=document.getElementsByClassName("tab-links");
-            var tabcontents=document.getElementsByClassName("tab-contents");
-            function generateDate() {
-                var currentTime = new Date();
-                var curdate = currentTime.toISOString().split('T')[0];
-                var curtime = currentTime.toTimeString().split(' ')[0];
-                document.getElementById("dateHidden").value = curdate;
-                document.getElementById("timeHidden").value = curtime;                
-            }
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
+            document.addEventListener('DOMContentLoaded', () => {
+                const tabLinks = document.querySelectorAll('.tab-links');
+                const tabContents = document.querySelectorAll('.tab-contents');
+                tabLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        tabLinks.forEach(item => item.classList.remove('active-link'));
+                        tabContents.forEach(panel => panel.classList.remove('active-tab'));
+                        link.classList.add('active-link');
+                        document.getElementById(link.dataset.tab).classList.add('active-tab');
+                    });
+                });
+
+                const form = document.getElementById('contactForm');
+                const msg = document.getElementById('msg');
+
+                form.addEventListener('submit', event => {
+                    event.preventDefault();
+                    const name = form.name.value.trim();
+                    const email = form.email.value.trim();
+                    const message = form.message.value.trim();
+
+                    if (!name || !email || !message) {
+                        msg.textContent = 'Please complete all fields before sending.';
+                        return;
+                    }
+
+                    const subject = encodeURIComponent(`Portfolio message from ${name}`);
+                    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+                    window.location.href = `mailto:ragavradhesh@gmail.com?subject=${subject}&body=${body}`;
+                    msg.textContent = 'Opening your email client...';
+                    form.reset();
+                });
+            });
         </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbw-Ef-fn1yF5PeFO3lLRFeEOqmR0lhLTumwVfvcD__E6yZUgXSuti39lCG-yRF8ZqZc3A/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg=document.getElementById("msg")
-
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML="Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML=""
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
     </body>
 </html>
