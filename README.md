@@ -51,17 +51,15 @@ portfolio/
 │
 └── assets/
 ```
-⚡ Getting Started
+
+# ⚡ Getting Started
 1. Clone Repository
 git clone https://github.com/RRhere/RRhere.git
 2. Open Project
-
 Open the folder in VS Code or any editor.
-
 3. Run Locally
 
 You can simply open:
-
 index.html
 
 OR use Live Server extension in VS Code.
@@ -115,7 +113,7 @@ template_portfolio
 
 with your actual EmailJS values.
 
-🎨 UI Features
+# 🎨 UI Features
 Hero Section
 Animated typing effect
 Gradient glow background
@@ -138,7 +136,8 @@ Desktop
 Laptop
 Tablet
 Mobile Devices
-✨ Customization
+
+# ✨ Customization
 Change Accent Color
 
 Inside style.css:
@@ -162,7 +161,8 @@ Duplicate this block:
 
 <div class="work glass hidden">
 </div>
-🌐 Deployment
+
+# 🌐 Deployment
 
 You can deploy using:
 
@@ -176,7 +176,8 @@ Features a modern developer-focused design inspired by:
 SaaS Landing Pages
 Modern Portfolio Websites
 Glassmorphism UI Trends
-👨‍💻 Author
+
+# 👨‍💻 Author
 Ragav Radhesh
 
 Full Stack Software Developer
@@ -184,11 +185,12 @@ Full Stack Software Developer
 Connect With Me
 GitHub: https://github.com/RRhere
 LinkedIn: https://www.linkedin.com/in/ragavradhesh/
-📄 License
+
+# 📄 License
 
 This project is open-source and available under the MIT License.
 
-⭐ Support
+# ⭐ Support
 
 If you like this project:
 
